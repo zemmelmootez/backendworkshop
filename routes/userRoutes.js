@@ -1,11 +1,8 @@
 const router=require('express').Router()
 const userController=require('../controllers/userController.js')
 
-router.get('/getAll',userController.getAll)
-router.get('/getUnderTwentyOne',userController.getUnderTwentyOne)
-
-
-
+router.post("/register",userController.register)
+router.post("/login",userController.login)
 
 
 
